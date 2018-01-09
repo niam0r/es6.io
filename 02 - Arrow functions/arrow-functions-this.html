@@ -67,12 +67,11 @@
       let second = 'open';
 
       if(this.classList.contains(first)) {
-        [first, second] = [second, first];
+        [first, second] = [second, first]; // switch
       }
 
       this.classList.toggle(first);
       setTimeout(() => {
-        console.log(this);
         this.classList.toggle(second);
       }, 500);
     });
