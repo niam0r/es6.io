@@ -32,10 +32,14 @@
 <script>
 
   // Select all the list items on the page and convert to array
-
+  const items = Array.from(document.querySelectorAll('[data-time]'));
   // Filter for only the elements that contain the word 'flexbox'
+  const flexItems = items.filter(item => item.textContent.includes('Flexbox'));
+  console.log(flexItems);
+
 
   // map down to a list of time strings
+  // const string
 
   // map to an array of seconds
 
